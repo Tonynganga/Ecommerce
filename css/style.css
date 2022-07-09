@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-one: hsl(26, 100%, 55%);
+    --primary-two: hsl(25, 100%, 94%);
+    --verydark-blue: hsl(220, 13%, 13%);
+    --darkgrayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --lightgrayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    /* width: 100vw; */
+    background-color: var(--white);
+    font-family: 'Kumbh sans';
+}
+/* ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px 0 5px 0;
+    margin-left: 20px;
+    height: 100%;
+} */
+a{
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 20px 0 0px;
+    color: var(--darkgrayish-blue);
+}
+/* a:hover{
+    border-bottom: 3px solid var(--primary-one);
+} */
+.container{
+    height: 100%;
+    width: 100%;
+
+}
+
+.navbar{
+    display: flex;
+    height: 80px;
+    margin: 10px 200px 0 200px;
+    border-bottom: 2px solid var(--lightgrayish-blue);
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-left{
+    height: auto;
+    display: flex;
+
+}
+
+.links{
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    margin-left: 40px;
+    display: flex;
+}
+
+.link{
+    justify-content: center;
+    top: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.link:hover{
+    border-bottom: 3px solid var(--primary-one);
+}
+
+
+.nav-right{
+    padding: 10px 10px 0 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+}
+
+.profile-image{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+
+}
+.profile-image:hover{
+    border-radius: 50%;
+    border: 2px solid var(--primary-one);
+}
+.cart-image{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 50px;
+    padding-top: 12px;
+}
+
+/* section card */
+.card-holder{
+    margin: 50px 200px 0 200px;
+    height: 100%;
+}
+
+.holder{
+    display: flex;
+    width: 100%;
+}
+.left-holder{
+    padding: 5px;
+    height: 370px;
+    width: 42%;
+    border-radius: 10px;
+}
+.left-holder img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.right-holder{
+    width: 58%;
+    display: flex;
+    margin: 0 0 0 100px;
+
+}
+
+.description{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+.top h6{
+    color: var(--primary-one);
+}
+.top h1{
+    color: var(--black);
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+.top p{
+    margin: 30px 0 0 0;
+    color: var(--darkgrayish-blue);
+    line-height: 25px;
+}
+.top h5{
+    margin: 3px;
+    text-decoration: line-through;
+    color: var(--darkgrayish-blue);
+}
+.price{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+.offer{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+    background-color: var(--primary-two);
+    color: var(--primary-one);
+    border-radius: 5px;
+    padding: 2px 8px 2px 8px;
+}
+
+.bottom{
+    display: flex;
+    column-gap: 30px;
+    margin: 20px 0 0 0;
+    align-items: center;
+}
+.counter{
+    display: flex;
+    background-color: var(--lightgrayish-blue);
+    border-radius: 8px;
+    height: 45px;
+    width: 120px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px 5px 12px;
+}
+.minus, .add h1{
+    cursor: pointer;
+    color: var(--primary-one);
+    font-weight: bold;
+}
+.count{
+    display: flex;
+    align-items: center;
+}
+.count h4{
+    padding-top: 5px;
+    font-weight: bold;
+}
+.cart-btn{
+    color: var(--white);
+}
+.cart-button{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    background-color: var(--primary-one);
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    justify-content: center;
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+
+}
+.btn-cart{
+    filter:  brightness(0) invert(1) ;
+    margin: 0 15px 0 0;
+    width: 15px;
+    height: 15px;
+    
+}
