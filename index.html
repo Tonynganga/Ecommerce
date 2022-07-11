@@ -1,71 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
 
         <!-- Navbar -->
         <div class="navbar">
             <div class="nav-left">
-                <div class="nav-logo">
-                    <img src="images/logo.svg" alt="">
-                </div>
-                
-                <div class="links">
-                        <div class="link">
-                            <a href="index.html">Collections</a>
-                        </div>
-                        <div class="link">
-                            <a href="index.html">Men</a>
-                        </div>
-                        <div class="link">
-                            <a href="index.html">Women</a>
-                        </div>
-                        <div class="link">
-                            <a href="index.html">About</a>
-                        </div>
-                        <div class="link">
-                            <a href="index.html">Contact</a>
-                        </div>
-                </div>
-                
+
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                        <!-- <img src="images/icon-menu.svg" alt=""> -->
+                    </label>
+                    <div class="nav-logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="nav-right">
                 <img src="images/icon-cart.svg" width="20px" class="cart-image">
-                <img src="images/image-avatar.png" class="profile-image"  alt="">
+                <img src="images/image-avatar.png" class="profile-image" alt="">
             </div>
         </div>
 
         <!-- Page Section -->
-
         <section class="card-holder">
             <div class="holder">
-                <div class="left-holder">
-                    <img src="images/image-product-1.jpg"  alt="">
+                <div class="wrapper">
+                <!-- <img src="images/icon-previous.svg" alt=""> -->
+
+                        <img src="images/image-product-1.jpg" alt="">
+                        <img src="images/image-product-2.jpg" alt="">
+                        <img src="images/image-product-3.jpg" alt="">
+                        <img src="images/image-product-4.jpg" alt="">
+                <!-- <img src="images/icon-next.svg" alt=""> -->
+
+                    
 
                 </div>
+                <div class="left-holder">
+                    <div class="main-image">
+                        <img src="images/image-product-1.jpg" alt="">
+                    </div>
+                    <div class="image-collasal">
+                        <div class="image-set">
+                            <img src="images/image-product-1-thumbnail.jpg" alt="">
+                        </div>
+                        <div class="image-set">
+                            <img src="images/image-product-2-thumbnail.jpg" alt="">
+                        </div>
+                        <div class="image-set">
+                            <img src="images/image-product-3-thumbnail.jpg" alt="">
+                        </div>
+                        <div class="image-set">
+                            <img src="images/image-product-3-thumbnail.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
                 <div class="right-holder">
                     <div class="description">
                         <div class="top">
                             <h6>SNEAKER COMPANY</h6>
                             <h1>Fall Limited Edition Sneakers</h1>
                             <p>These low-profile sneakers are your perfect casual wear
-                                companion. Featuring a durable rubber outer sole, they'll withstand 
+                                companion. Featuring a durable rubber outer sole, they'll withstand
                                 averything the weather can offer.
                             </p>
                             <div class="price">
-                                <h2>&#36;125.00</h2>
-                                <div class="offer">
-                                    <h4>50%</h4>
+                                <div class="real-price">
+                                    <h2>&#36;125.00</h2>
+                                    <div class="offer">
+                                        <h4>50%</h4>
+                                    </div>
                                 </div>
+                                <h5>&#36;250.00</h5>
                             </div>
-                            <h5>&#36;250.00</h5>
                         </div>
                         <div class="bottom">
                             <div class="counter">
@@ -81,7 +112,8 @@
 
                             </div>
                             <div class="cart-btn">
-                                <button class="cart-button"><img class="btn-cart" src="images/icon-cart.svg" alt="">Add to cart</button>
+                                <button class="cart-button"><img class="btn-cart" src="images/icon-cart.svg" alt="">Add
+                                    to cart</button>
                             </div>
 
                         </div>
@@ -91,6 +123,7 @@
             </div>
         </section>
     </div>
-    
+
 </body>
+
 </html>
